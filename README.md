@@ -1,6 +1,7 @@
-动态跳转引导页
+# 提莫VPN - 动态跳转引导页 (Teemo VPN - Dynamic Redirect Landing Page)
 
-这是一个现代化、带有丰富动态效果的网站跳转引导页。它被设计用于在用户访问主页前，提供一个视觉吸引力强、信息清晰的过渡界面。页面包含一个10秒倒计时，结束后会自动跳转到目标网站，同时用户也可以选择手动立即跳转。
+这是一个现代化、带有丰富动态效果的网站跳转引导页。它被设计用于在用户访问主页前，提供一个视觉吸引力强、信息清晰的过渡界面。页面包含一个可配置时长的倒计时，结束后会自动跳转到目标网站，同时用户也可以选择手动立即跳转。
+
 
 **[在线演示链接(https://www.timo.pp.ua)**
 
@@ -16,29 +17,26 @@
 ### 视觉效果
 * **🚀 3D粒子背景:** 基于 `Three.js` 创建的互动式星空粒子背景，会随着鼠标的移动而细腻地变换视角，营造出置身于宇宙空间的沉浸感。
 * **🎨 动态渐变背景:** 流畅变换的四色渐变背景，为整个页面提供了富有科技感和高级感的基调。
-* **💡 鼠标辉光跟随:** 一个柔和的发光圆点会平滑地跟随鼠标指针移动，增强了页面的互动性和趣味性。
 * **💎 玻璃拟态 (Glassmorphism) 卡片:** 中心的内容区域采用流行的“毛玻璃”效果，搭配半透明边框，在复杂的背景上也能保证信息的清晰可读性。
-* **🌟 呼吸式光晕:** 内容卡片带有脉冲式的发光特效，仿佛在“呼吸”，能有效吸引用户的注意力。
 
 ### 交互与动画
 * **🎬 优雅的入场动画:** 页面加载时，所有文本和控件元素均采用自下而上的淡入动画，使内容呈现过程流畅自然。
 * **⏳ 动态SVG倒计时:** 倒计时器以SVG圆环进度条的形式动态展示时间流逝，直观且美观。
 * **⚡️ 加速“跃迁”效果:** 随着倒计时临近结束，背景中的粒子会显著加速飞行，为即将发生的页面跳转营造出一种“时空穿梭”前的紧张感和期待感。
-* **💨 炫酷的离场动画:** 在跳转前的最后一秒，内容卡片会以一个旋转、缩小的动画效果优雅退场，为用户体验画上完美的句号。
 
 ### 功能与易用性
+* **🔧 **极其简单的配置**: 打开文件即可在最顶部找到配置区域，修改一处网址即可同步所有链接，无需任何编程知识。**
 * **🌐 双语支持:** 内置 **中文/English** 一键切换功能，无需刷新页面即可更改所有文本内容。
-* **💾 语言记忆:** 用户的语言偏好会自动保存在浏览器的 `localStorage` 中，下次访问时将自动应用，无需重复设置。
+* **💾 语言记忆:** 用户的语言偏好会自动保存在浏览器的 `localStorage` 中，下次访问时将自动应用。
 * **📱 响应式设计:** 基于 `Tailwind CSS` 构建，确保页面在桌面、平板和手机等不同尺寸的设备上都能获得完美的显示效果。
-* **🔧 高度可配置:** 整个项目是单文件HTML，所有关键信息（如项目名称、跳转链接、多语言文本）都在JavaScript配置中，修改起来极其方便。
 
 ---
 
 ## 🛠️ 技术栈 (Technology Stack)
 
 * **HTML5:** 页面结构
-* **Tailwind CSS:** 快速、高效的原子化CSS框架
 * **JavaScript (ES6):** 核心交互逻辑与动画控制
+* **Tailwind CSS:** 快速、高效的原子化CSS框架
 * **Three.js:** 驱动3D粒子背景
 
 ---
@@ -48,55 +46,61 @@
 这是一个纯前端的单文件项目，无需复杂的构建或安装过程。
 
 1.  克隆本仓库或直接下载 `index.html` 文件。
-2.  使用任意现代浏览器打开该 `index.html` 文件即可立即查看效果。
+2.  使用任意文本编辑器（如记事本、VS Code等）打开 `index.html` 文件，根据下一节的指南进行修改。
+3.  保存文件，用浏览器打开即可查看您的定制效果。
+
+---
+
+## ☁️ 部署到 Vercel (Deploy to Vercel)
+
+您可以将此项目免费部署到 Vercel 平台，以获得一个公开、高速的网址。
+
+### 一键部署 (推荐)
+
+1.  **前提**: 您需要先将此项目上传到您自己的 **公开** GitHub 仓库。
+2.  **修改链接**: **编辑本 README 文件**，将下方按钮链接中的 `https://github.com/YOUR_USERNAME/YOUR_REPO_NAME` 替换为您自己的仓库地址。
+3.  **点击部署**: 保存并提交文件，然后点击下方的部署按钮：
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/YOUR_USERNAME/YOUR_REPO_NAME)
+
+4.  Vercel 将会引导您完成账户创建和项目部署，全程通常无需任何额外配置，点击几下即可完成。
+
+### 手动部署
+
+1.  注册并登录您的 [Vercel](https://vercel.com/) 账户。
+2.  点击 "Add New..." -> "Project"。
+3.  选择 "Import Git Repository" 并导入您存放此项目的 GitHub 仓库。
+4.  Vercel 会自动识别这是一个无框架的静态网站。您无需更改任何设置，直接点击 "Deploy" 即可成功部署。
 
 ---
 
 ## ⚙️ 自定义指南 (Customization)
 
-您可以非常轻松地将此模板用于您自己的项目。只需打开 `index.html` 文件，在底部的 `<script>` 标签内进行以下修改：
+您可以非常轻松地将此模板用于您自己的项目。**打开 `index.html` 文件，您将在最上方看到一个清晰的配置区域**。
 
-1.  **修改跳转链接:**
-    ```javascript
-    // 找到这一行，将链接替换为您的目标网址
-    const redirectUrl = '[https://www.baidu.com](https://www.baidu.com)';
-    ```
+```html
+<script>
+    // --- 1. 核心网址设置 (***最重要***) ---
+    const SITE_CONFIG = {
+        url: '[https://www.your-website.com](https://www.your-website.com)',      // 最终要跳转到的完整网址
+        name: 'your-website.com'              // 显示在页面底部的网址文本
+    };
 
-2.  **修改项目名称和所有文本:**
-    在 `translations` 对象中，您可以修改中文 (`zh`) 和英文 (`en`) 对应的所有文本内容。
-    ```javascript
-    const translations = {
-        zh: {
-            page_title: '提莫 VPN - 您的新标题',
-            main_title: '提莫 VPN',
-            // ... 其他中文文本
-        },
-        en: {
-            page_title: 'Teemo VPN - Your New Title',
-            main_title: 'Teemo VPN',
-            // ... Other English text
+    // --- 2. 其他参数与文本设置 ---
+    const CONFIG = {
+        // ...
+        countdownSeconds: 10,
+        // ...
+        translations: {
+            zh: {
+                page_title: '您的网站标题',
+                main_title: '您的项目名称',
+                // ...
+            },
+            en: {
+                // ...
+            }
         }
     };
-    ```
+</script>
 
-3.  **调整倒计时时长:**
-    默认时长为10秒。您可以修改 `countdown` 变量的值。
-    ```javascript
-    // 将 10 修改为您想要的秒数
-    let countdown = 10; 
-    ```
-    > **注意:** 如果您修改了倒计时总时长，请务必同步修改 `updateCountdown` 函数中的进度计算公式 `((10 - countdown) / 10)`，将两个 `10` 替换成您的新总时长，以确保圆形进度条能正确显示。
-
-4.  **修改本地存储的键名 (可选):**
-    为了避免与其他项目冲突，您可以修改用于存储语言偏好的 `localStorage` 键名。
-    ```javascript
-    // 将 'teemo_vpn_lang' 修改为您的项目专属名称
-    let currentLang = localStorage.getItem('your_project_lang') || 'zh';
-    localStorage.setItem('your_project_lang', lang);
-    ```
-
----
-
-## 📄 许可证 (License)
-
-本项目采用 [MIT License](LICENSE) 授权。
